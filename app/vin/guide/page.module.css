@@ -1,0 +1,368 @@
+/* VIN Guide Page Styles */
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.list li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: var(--color-bg);
+  border-left: 3px solid var(--color-accent);
+}
+
+.list li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+/* VIN Breakdown */
+.vinBreakdown {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+}
+
+.vinExample {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vinChars {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vinChar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--color-accent);
+  color: white;
+  border: 1px solid var(--color-accent);
+}
+
+.vinLabels {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.vinLabel {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* VIN Parts */
+.vinParts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.vinPart {
+  padding: 1.5rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.vinPartHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.vinPartNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--color-accent);
+  color: white;
+  border: 2px solid var(--color-accent);
+}
+
+.vinPartHeader strong {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.vinPartDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.vinPartExamples {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.example {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.example code {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* Characters Box */
+.charactersBox {
+  padding: 1.5rem;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  margin: 1.5rem 0;
+}
+
+.charactersSection {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.charactersSection strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.charactersNote {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--color-accent);
+  color: white;
+  border: 2px solid var(--color-accent);
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepContent strong {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.stepContent p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  background: var(--color-accent);
+  color: white;
+  border: 2px solid var(--color-accent);
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.ctaText {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid white;
+  font-size: 1.125rem;
+}
+
+.ctaButton:hover {
+  background: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .vinParts {
+    grid-template-columns: 1fr;
+  }
+
+  .vinChars {
+    gap: 0.15rem;
+  }
+
+  .vinChar {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stepNumber {
+    margin: 0 auto;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .vinChar {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.75rem;
+  }
+}

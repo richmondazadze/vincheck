@@ -1,0 +1,131 @@
+/**
+ * Custom Fonts - Clash Display & Chillax
+ */
+
+/* ============================================
+   Clash Display Font Family
+   ============================================ */
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ============================================
+   Chillax Font Family
+   ============================================ */
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff2') format('woff2'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff') format('woff'),
+       url('/fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
