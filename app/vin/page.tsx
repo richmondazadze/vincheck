@@ -9,7 +9,7 @@ import { decodeVin, getVehiclePhotos, checkStolen, getVehicleValuation } from "@
 import { generateWebPageSchema } from "@/lib/seo/structured-data";
 import { getVinDecoderMeta } from "@/lib/seo/meta";
 import { isValidVin, formatCurrency } from "@/lib/utils/format";
-import type { VinDecodeResponse } from "@/lib/api/types";
+import type { VinDecodeResponse, VehicleValuationResponse } from "@/lib/api/types";
 import styles from "./page.module.css";
 
 interface SearchParams {
@@ -123,7 +123,7 @@ export default async function VinDecoderPage({ searchParams }: PageProps) {
   let decodedVehicle: VinDecodeResponse | null = null;
   let vehiclePhotos = null;
   let stolenCheck = null;
-  let valuation = null;
+  let valuation: VehicleValuationResponse | null = null;
   let error = null;
 
   if (vin) {
@@ -219,10 +219,10 @@ export default async function VinDecoderPage({ searchParams }: PageProps) {
 
             {/* Quick Actions */}
             <div className={styles.actionsBar}>
-              <Link href={`/vin/guide`} className={styles.actionLink}>
+              <Link href={"/vin/guide" as any} className={styles.actionLink}>
                 Learn How to Read VINs →
               </Link>
-              <Link href={`/vin/batch`} className={styles.actionLink}>
+              <Link href={"/vin/batch" as any} className={styles.actionLink}>
                 Batch Decoder →
               </Link>
               <PrintButton />
@@ -233,16 +233,16 @@ export default async function VinDecoderPage({ searchParams }: PageProps) {
               <div className={styles.infoCard}>
                 <h3 className={styles.cardTitle}>Vehicle Photos</h3>
                 <div className={styles.photosGrid}>
-                  {vehiclePhotos.photos.slice(0, 6).map((photoUrl, index) => {
+                  {vehiclePhotos.photos.slice(0, 6).map((photo, index) => {
                     // Extract photo info from URL if possible, otherwise use generic label
-                    const urlParts = photoUrl.split('/');
+                    const urlParts = photo.url.split('/');
                     const filename = urlParts[urlParts.length - 1] || `photo-${index + 1}`;
                     const photoName = filename.replace(/\.(jpg|jpeg|png|webp)$/i, '').replace(/[-_]/g, ' ');
                     
                     return (
                       <div key={index} className={styles.photoItem}>
                         <Image
-                          src={photoUrl}
+                          src={photo.url}
                           alt={`${specs.make} ${specs.model} - ${photoName}`}
                           width={300}
                           height={200}
@@ -317,7 +317,7 @@ export default async function VinDecoderPage({ searchParams }: PageProps) {
                         </td>
                       </tr>
                     )}
-                    {'marketValue' in valuation && valuation.marketValue && (
+                    {valuation.marketValue && (
                       <tr>
                         <th scope="row">Current Market Value</th>
                         <td>
@@ -455,7 +455,7 @@ export default async function VinDecoderPage({ searchParams }: PageProps) {
           </p>
           
           <div className={styles.infoActions}>
-            <Link href="/vin/guide" className={styles.guideLink}>
+            <Link href={"/vin/guide" as any} className={styles.guideLink}>
               Read Complete VIN Guide →
             </Link>
           </div>
